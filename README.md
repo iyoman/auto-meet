@@ -1,6 +1,6 @@
 # Joins a schedule of Google Meet classes in Vivaldi automatically with camera and microphone turned off
 
-### This python script script uses Selenium to log into your gmail account and then joins the meeting link.
+### This python script script uses Selenium to log into your gmail account and then joins the meeting link. Based on an x and y day system and works in the Vivaldi web browser.
 
 ## Installation
 
