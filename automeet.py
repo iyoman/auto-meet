@@ -32,13 +32,13 @@ def login(driver, meetcode):
     if driver.current_url == "https://myaccount.google.com/?utm_source=sign_in_no_continue":
         print('Already Logged in...')
     else:
-        driver.find_element_by_xpath("//input[@name='identifier']").send_keys("averyisaacp@scps.net")
+        driver.find_element_by_xpath("//input[@name='identifier']").send_keys("[EMAIL ADDRESS HERE]")
         time.sleep(1)
         #Next Button:
         driver.find_element_by_xpath("//*[@id='identifierNext']/div/button/div[2]").click()
         time.sleep(1)
         #Password:
-        driver.find_element_by_xpath("//input[@name='password']").send_keys("superman03")
+        driver.find_element_by_xpath("//input[@name='password']").send_keys("[PASSWORD HERE]")
         time.sleep(1)
         print('Logged in...')
         #next button:
@@ -65,40 +65,40 @@ def login(driver, meetcode):
 def class1():
     if day == 'x':
         print('Entering Economics...')
-        meetcode = "MVHSthompsondn1X"
+        meetcode = "[FIRST CLASS MEETCODE]"
     else:
         print("Entering Spanish...")
-        meetcode = "wrightsp4b1y"
+        meetcode = "[FIRST CLASS MEETCODE]"
     driver = webdriver.Chrome(executable_path=r'C:\Users\isaac\chromedriver\chromedriver.exe', options=options)
     login(driver, meetcode)
 
 def class2():
     if day == 'x':
         print('Entering Physics...')
-        meetcode = "mvhssthompsonb2x"
+        meetcode = "[SECOND CLASS MEETCODE]"
     else:
         print("Entering Math...")
-        meetcode = "MVHSeCrosswell2y"
+        meetcode = "[SECOND CLASS MEETCODE]"
     driver = webdriver.Chrome(executable_path=r'C:\Users\isaac\chromedriver\chromedriver.exe', options=options)
     login(driver, meetcode)
 
 def class3():
     if day == 'x':
         print('Entering Chamber...')
-        meetcode = "mvhsmcdonald3x"
+        meetcode = "[THIRD CLASS MEETCODE]"
     else:
         print("Entering English...")
-        meetcode = "mvhsjbrooks3y"
+        meetcode = "[THIRD CLASS MEETCODE]"
     driver = webdriver.Chrome(executable_path=r'C:\Users\isaac\chromedriver\chromedriver.exe', options=options)
     login(driver, meetcode)
 
 def class4():
     if day == 'x':
         print('Entering History...')
-        meetcode = "MVHSOffineer4XAPUSH"
+        meetcode = "[FOURTH CLASS MEETCODE]"
     else:
         print("Entering Guitar...")
-        meetcode = "mvhsmcdonald4y"
+        meetcode = "[FOURTH CLASS MEETCODE]"
     driver = webdriver.Chrome(executable_path=r'C:\Users\isaac\chromedriver\chromedriver.exe', options=options)
     login(driver, meetcode)
 
