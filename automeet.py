@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 options = Options()
 options.add_argument("start-maximized")
 options.add_argument("--disable-extensions")
-options.binary_location=r'[LOCATION OF vivaldi.exe]'
+options.binary_location=r'[LOCATION OF vivaldi.exe]' # path to Vivaldi or other web browser
 options.add_argument(r"user-data-dir=C:\dev-app2") # this is the directory for the desired user data to be used in the tab created
 options.add_experimental_option("prefs", {
     "profile.default_content_setting_values.notifications": 1,
