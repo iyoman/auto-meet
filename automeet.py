@@ -102,14 +102,12 @@ def class4():
     driver = webdriver.Chrome(executable_path=r'C:\Users\isaac\chromedriver\chromedriver.exe', options=options)
     login(driver, meetcode)
 
-print("Running", end = '')
-
 if __name__ == "__main__":
     schedule.every().day.at("10:03").do(class1)
     schedule.every().day.at("11:05").do(class2)
     schedule.every().day.at("12:55").do(class3)
     schedule.every().day.at("14:00").do(class4)
+    print("Running...")
     while True:
         schedule.run_pending()  # check if we need to run anything
-        time.sleep(10)
-        print(".", end = '')  # wait 10 seconds before checking each time again
+        time.sleep(20) # wait 20 seconds before checking each time again
